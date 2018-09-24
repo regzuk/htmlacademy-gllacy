@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,17 +11,27 @@
     <header class="main-header">
       <div class="container">
         <a class="main-logo-link" href="index.html">
-          <img class="main-logo" src="img/logo.svg" width="154" height="64">
+          <img class="main-header-logo" src="img/logo.svg" width="154" height="64">
         </a>
-        <ul class="main-header-navigation-list">
-          <li><a class="navigation-link" href="catalog.html">Каталог</a></li>
-          <li><a class="navigation-link" href="delivery.html">Доставка и Оплата</a></li>
-          <li><a class="navigation-link" href="abou.html">О Компании</a></li>
-        </ul>
+        <nav class="main-navigation">
+          <ul class="main-header-navigation-list">
+            <li class="navigation-item catalog-navigation-item"><a class="navigation-link" href="catalog.html">Каталог</a>
+              <ul class="catalog-detalization-list">
+                <li><a class="detalization-link">Новинки</a></li>
+                <li><a class="detalization-link">Сливочные</a></li>
+                <li><a class="detalization-link">Щербеты</a></li>
+                <li><a class="detalization-link">Фруктовый лёд</a></li>
+                <li><a class="detalization-link">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="navigation-item delivery-navigation-item"><a class="navigation-link" href="delivery.html">Доставка и Оплата</a></li>
+            <li class="navigation-item about-navigation-item"><a class="navigation-link" href="about.html">О Компании</a></li>
+          </ul>
+        </nav>
         <div class="user-menu">
           <form class="main-header-search" method="post" action="https://echo.htmlacademy.ru">
             <input id="search-input" class="main-header-search-input" type="text" name="search">
-            <button type="submit">Поиск</button>
+            <button class="visually-hidden" type="submit">Поиск</button>
           </form>
           <a class="user-menu-button" href="#">Вход</a>
           <a class="user-menu-button" href="#">Пусто</a>
@@ -32,8 +42,8 @@
         </div>
       </div>
     </header>
-    <main class="main-content">
-      <h1>Магазин Глейси</h1>
+    <!-- <main class="main-content">
+      <h1 class="visually-hidden">Магазин Глейси</h1>
       <section class="promo-section">
         <div class="container">
           <h2>Варианты мороженого</h2>
@@ -175,7 +185,7 @@
           </div>
         </div>
       </section>
-    </main>
+    </main> -->
     <footer class="main-footer">
       <div class="container">
         <ul class="social-link-list">
